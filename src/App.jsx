@@ -1,5 +1,6 @@
 //import components
-import { AnimRoutes, Header } from "./components";
+import AnimRoutes from "./components/AnimRoutes";
+import Header from "./components/Header";
 //import router
 import { BrowserRouter as Router } from "react-router-dom";
 //import motion
