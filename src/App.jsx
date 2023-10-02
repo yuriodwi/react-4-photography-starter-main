@@ -4,6 +4,7 @@ import { AnimRoutes, Header } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
 //import motion
 import { motion } from "framer-motion";
+
 const App = () => {
   return (
     <>
