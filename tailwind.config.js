@@ -12,6 +12,9 @@ export default {
       lg: "1024px",
       xl: "1192px",
     },
+    backgroundImage: (theme) => ({
+      "gradient-whiteblue": "linear-gradient(360deg,#eef7f9 75%, #ffff 100%)",
+    }),
     extend: {
       colors: {
         primary: "#0E1112",

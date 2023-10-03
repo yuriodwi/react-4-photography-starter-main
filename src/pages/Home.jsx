@@ -21,9 +21,9 @@ const Home = () => {
         <div className="flex flex-col justify-center">
           {/* text */}
           <motion.div
-            initial={{ opacity: 0, x: "-20%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "-20%" }}
+            initial={{ opacity: 0, y: "-50%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-50%" }}
             transition={transition1}
             className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start"
           >
@@ -39,9 +39,9 @@ const Home = () => {
           </motion.div>
           {/* img */}
           <motion.div
-            initial={{ opacity: 0, x: "10%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "10%" }}
+            initial={{ opacity: 0, y: "20%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "20%" }}
             transition={transition1}
             className="flex justify-end max-h-96 lg:max-h-max"
           >

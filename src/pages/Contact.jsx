@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left">
           {/* bg */}
-          <div className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10"></div>
+          <div className="hidden lg:flex bg-gradient-whiteblue absolute bottom-0 left-0 right-0 top-72 -z-10"></div>
           {/* text & form */}
           <motion.div
             initial={{ opacity: 0, y: "50%" }}
