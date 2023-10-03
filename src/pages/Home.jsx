@@ -25,7 +25,6 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-50%" }}
             transition={transition1}
-            className="section"
             className="w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start"
           >
             <h1 className="h1">
@@ -40,14 +39,14 @@ const Home = () => {
           </motion.div>
           {/* img */}
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
+            initial={{ opacity: 0, x: "20%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "20%" }}
             transition={transition1}
             className="flex justify-end max-h-96 lg:max-h-max"
           >
             <motion.div
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               transition={transition1}
               className="relative lg:right-40 overflow-hidden"
             >
