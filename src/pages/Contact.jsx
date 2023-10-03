@@ -1,17 +1,31 @@
 //import contact
 import WomanImg from "../img/contact/woman.png";
+//import motion
+import { motion } from "framer-motion";
+//import transition
+import { transition1 } from "../transition";
 
 const Contact = () => {
   return (
-    <section className="section bg-white">
+    <motion.section
+      initial={{ opacity: 0, y: "20%" }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: "20%" }}
+      transition={transition1}
+      className="section bg-white"
+    >
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row h-full items-center justify-start pt-36 gap-x-8 text-center lg:text-left">
           {/* bg */}
-          <div className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10">
-            bg
-          </div>
+          <div className="hidden lg:flex bg-[#eef7f9] absolute bottom-0 left-0 right-0 top-72 -z-10"></div>
           {/* text & form */}
-          <div className="lg:flex-1 lg:pt-32 px-4">
+          <motion.div
+            initial={{ opacity: 0, y: "50%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "50%" }}
+            transition={transition1}
+            className="lg:flex-1 lg:pt-32 px-4"
+          >
             <h1 className="h1">Contact me</h1>
             <p className="mb-12">I would love to get suggestions from you.</p>
             {/* form */}
@@ -43,14 +57,18 @@ const Contact = () => {
                 Send it
               </button>
             </form>
-          </div>
+          </motion.div>
           {/* image */}
-          <div className="flex-1">
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={transition1}
+            className="flex-1"
+          >
             <img src={WomanImg} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
